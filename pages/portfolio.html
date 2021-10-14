@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/pageStyles/about.css">
+        <link rel="stylesheet" href="../styles/pageStyles/portfolioPageStyles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
+    </head>
+    <div class="slanted-header"></div>
+    <span onclick="window.location.href='../index.html'" id="back-arrow">
+        <i id="back-icon" class="fas fa-angle-left"></i>
+        <i id="back-icon-fade" class="fas fa-angle-left"></i>
+    </span>
+
+    <body>
+        <h1>here are my projects:</h1>
+
+        <span id="output"></span>
+        <script type="text/python" id="script1">
+            from browser import document
+
+            def show_text(e):
+                document['output'].textContent = e.target.value;
+
+            document['text'].bind('input', show_text)
+        </script>
+
+        <h4>python math:</h4>
+        <iframe src="https://trinket.io/embed/python/bccef8726f?toggleCode=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen style="margin:auto; display: block; width: 75%; margin-bottom: 15px; border-radius: 5px;"></iframe>
+        <div style="text-align: center; width: 50%; margin: auto; margin-bottom: 5em;"><p>This was one of my first interactive python applications that I made. Classic escape room.</p></div>
+
+        <div class="first-website-link"><a href = 'https://luke-fairbanks-portfolio.herokuapp.com/' target="_blank" style="text-decoration: none; color: var(--clr-neon);">my first website:</a>
+        <span class="tooltip">take me to the website</span>
+        </div>
+        <iframe src="https://luke-fairbanks-portfolio.herokuapp.com/" width=50% height=800 frameborder="0" style="margin:auto; display: block; width: 75%; margin-bottom: 15px; background-color: white; border-radius: 5px;" ></iframe>
+        <div style="text-align: center; width: 50%; margin: auto; margin-bottom: 5em;"><p>I made this following along with the Bottega DevCamp online course</p></div>
+
+    </body>
+    <script src="../script/about.js"></script>
+</html>

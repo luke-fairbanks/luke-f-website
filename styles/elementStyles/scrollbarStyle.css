@@ -1,0 +1,16 @@
+/*scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track{
+    background: linear-gradient(300deg, var(--clr-neon), #ebf8e1 40%, var(--clr-neon));
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 0px 0px 1000000vh var(--clr-bkg);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact ME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/pageStyles/contactPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+        <script src="../script/contactPage.js"></script>
+    </head>
+    <div class="slanted-header"></div>
+    <span onclick="window.location.href='../index.html'" id="back-arrow">
+        <i id="back-icon" class="fas fa-angle-left"></i>
+        <i id="back-icon-fade" class="fas fa-angle-left"></i>
+    </span>
+    <body>
+        <!--split page in two, info on the left and pictue on the right-->
+        <div class="contact-container">
+            <div class="left-column">
+                <div class="contact-info-container">
+                    <div class="contact-point">
+                        <i id="contact-icon" class="fas fa-envelope"></i>
+                        <div class="contact-text">lukedfairbanks@gmail.com</div>
+                    </div>
+                    <div class="contact-point" style="cursor: default;">
+                        <i id="contact-icon" class="fas fa-mobile"></i>
+                        <div class="contact-text">dont-call-me</div>
+                    </div>
+                    <a href='https://www.linkedin.com/in/luke-fairbanks-962b48210/' target="_blank" class="contact-point" style="text-decoration: none; color:white">
+                        <i id="contact-icon" class="fab fa-linkedin" style="color: #2867B2;"></i>
+                        <div class="contact-text">@luke-fairbanks</div>
+                    </a>
+                    <a onclick="myWebsiteRedirect()" class="contact-point" style="text-decoration: none; color: white; cursor:pointer;">
+                        <i id="contact-icon" class="far fa-window-maximize"></i> 
+                        <div id="website-meme"class="contact-text">my website</div>
+                    </a>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="contact-picture">
+                    <img src="../images/contactPicture.JPG">
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </body>
+</html>

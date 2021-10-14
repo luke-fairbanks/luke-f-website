@@ -1,0 +1,53 @@
+:root{
+    --clr-neon: hsl(156.83 100% 71.57%);
+    --clr-bkg: #343434;
+    --font-apl: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*top left back arrow*/
+#back-arrow{
+    padding-left: .5em;
+    padding-top: .3em;
+    font-size: 5rem;
+    width: .75em;
+    transition: 100ms linear;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+}
+.fa-angle-left{
+    position: absolute;
+    color: var(--clr-bkg);
+
+}
+/*arrow shoot to the left*/
+#back-icon-fade:hover{
+    animation: move 1s infinite ;
+}
+
+@keyframes move {
+    0% {transform: translateX(0px); opacity: 1;}
+    90% {transform: translateX(-25px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 0;}
+}
+
+/*neon slanted header*/
+.slanted-header{
+    margin: 0; padding: 5em 5em 4em; color: #efefef;
+    overflow:hidden;
+    position: relative;
+  }
+  
+.slanted-header::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    transform: skewY(-5deg);
+    background: var(--clr-neon);
+    transform-origin: bottom left;
+    z-index: 0;
+  }

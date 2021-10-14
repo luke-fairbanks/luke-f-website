@@ -1,0 +1,66 @@
+@import "../elementStyles/slantedHeaderWithBackArrow.css";
+
+:root{
+    /* colors */
+    --clr-neon: hsl(156.83 100% 71.57%);
+    --clr-bkg: #343434;
+}
+
+.iframe{
+    border-width: 0;
+    
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--clr-neon);
+    width: 75%;
+    padding-bottom: 5px;
+    position: relative;
+    margin-left: 7em;
+    display: inline-block;
+}
+
+/*tooltip on hover*/
+.first-website-link{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--clr-neon);
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: 7em;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.first-website-link .tooltip {
+    font-weight: normal;
+    visibility: hidden;
+    width: 175px;
+    background-color: whitesmoke;
+    color: var(--clr-bkg);
+    text-align: center;
+    padding: 5px 0;
+    top: -5px;
+    left: 105%;
+    position:absolute;
+    z-index: 1;
+}
+.first-website-link .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent whitesmoke transparent transparent;
+}
+
+.first-website-link:hover .tooltip {
+    visibility: visible;
+}
