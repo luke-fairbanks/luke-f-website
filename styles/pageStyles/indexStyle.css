@@ -314,3 +314,28 @@ body, html {
         font-size: 14px;
     }
 }
+
+/*hide option 2 until min screen size*/
+.option2 {
+    display: none;
+}
+@media only screen and (max-width: 750px){
+    .option1 {
+        display: none;
+    }
+    .option2 {
+        display: block;
+    }
+    .type{
+        border-right: .15em solid white;
+        animation: animated-text 4s steps(40,end) 1s 1 normal both,
+                   animated-cursor 600ms steps(22,end) infinite;
+    }    
+    @keyframes animated-text{
+        from{width: 0;}
+        10%{width: 0;}
+        80%{width: 360px;}
+        to{width: 360px;}
+      }
+    
+}
