@@ -29,7 +29,16 @@ function pageScroll(){
     $('body, html').css('overflow','visible');
     //document.querySelector(".type-writer-intro h1").classList.add("type")
 
-    $(".type-writer-intro h1").addClass("type");
+    //add the type to the text
+    $(".option1").addClass("type");
+    //for multiple lines, wait until the first animation is finished
+    $(".line1").addClass("type");
+    $(".line1").one(animationEvent,
+      function(event) {
+        $(".line2").addClass("type");
+      });
+
+    /* SCROLL WHEN FINISHED
     $(".type-writer-intro h1").one(animationEvent,
                 function(event) {
         window.scroll({
@@ -37,7 +46,7 @@ function pageScroll(){
             left: 00,
             behavior: "smooth"
         });
-    });
+    });*/
 }
 
 //Random background pic each load
