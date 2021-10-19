@@ -1,7 +1,5 @@
 //scrolling for safari
-import smoothscroll from 'smoothscroll-polyfill';
 
-smoothscroll.pollyfill();
 
 const faders = document.querySelectorAll('.fade-in')
 
