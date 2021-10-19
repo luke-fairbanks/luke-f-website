@@ -342,5 +342,9 @@ body, html {
         80%{width: 360px;}
         to{width: 360px;}
       }
+    
+    .type-writer-intro h1{
+        font-size: 25px;
+    }
         
 }
