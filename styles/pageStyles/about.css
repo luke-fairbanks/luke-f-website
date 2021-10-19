@@ -103,7 +103,8 @@ h1{
         margin-right: 10px;
         width: 100%;
     }
-    .my-bio, .my-picture{
+    .my-bio, .slideshow-container{
         max-width: 80%;
+        max-height: 70%;
     }
 }
