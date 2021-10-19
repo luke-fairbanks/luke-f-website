@@ -326,9 +326,14 @@ body, html {
     .option2 {
         display: block;
     }
-    .type{
+    .type-line1{
         border-right: .15em solid white;
         animation: animated-text 4s steps(40,end) 1s 1 normal both,
+                   animated-cursor-end 600ms steps(22,end) infinite;
+    }    
+    .type-line2{
+        border-right: .15em solid white;
+        animation: animated-text 4s steps(40,end) .1s 1 normal both,
                    animated-cursor 600ms steps(22,end) infinite;
     }    
     @keyframes animated-text{
@@ -337,5 +342,5 @@ body, html {
         80%{width: 360px;}
         to{width: 360px;}
       }
-    
+        
 }

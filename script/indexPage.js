@@ -32,10 +32,11 @@ function pageScroll(){
     //add the type to the text
     $(".option1").addClass("type");
     //for multiple lines, wait until the first animation is finished
-    $(".line1").addClass("type");
+    $(".line1").addClass("type-line1");
     $(".line1").one(animationEvent,
       function(event) {
-        $(".line2").addClass("type");
+        $(".line1").css("border-right-color", "transparent;")
+        $(".line2").addClass("type-line2");
       });
 
     /* SCROLL WHEN FINISHED
