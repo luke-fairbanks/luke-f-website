@@ -35,7 +35,7 @@ function pageScroll(){
     $(".line1").addClass("type-line1");
     $(".line1").one(animationEvent,
       function(event) {
-        $(".type-line1").css("border-right", "transparent;")
+        //$(".type-line1").css("border-right", "transparent;")
         $(".line2").addClass("type-line2");
       });
 
