@@ -101,7 +101,7 @@ h1{
         flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
-        width: 100%;
+        margin: auto;
     }
     .my-bio, .slideshow-container{
         max-width: 80%;
