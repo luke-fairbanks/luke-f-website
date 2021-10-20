@@ -1,4 +1,3 @@
-//scrolling for safari
 
 
 const faders = document.querySelectorAll('.fade-in')
