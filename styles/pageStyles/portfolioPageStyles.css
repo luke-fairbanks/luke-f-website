@@ -7,6 +7,9 @@
     --clr-bkg: #343434;
 }
 
+body, html {
+    overflow: hidden;
+}
 
 .iframe{
     border-width: 0;
