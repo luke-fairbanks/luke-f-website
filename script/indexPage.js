@@ -42,15 +42,11 @@ function neonBtnClick(){
         $(".line2").addClass("type-line2");
       });
 
-    /* SCROLL WHEN FINISHED
-    $(".type-writer-intro h1").one(animationEvent,
+    /* SCROLL WHEN FINISHED*/
+    $("#typerIntro").one(animationEvent,
                 function(event) {
-        window.scroll({
-            top: 1250,
-            left: 00,
-            behavior: "smooth"
-        });
-    });*/
+                  window.location.href = "https://luke-fairbanks.netlify.app/#scroll-invitation";
+    });
 }
 
 //Random background pic each load
