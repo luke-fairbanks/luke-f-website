@@ -23,11 +23,12 @@ function whichAnimationEvent(){
   var animationEvent = whichAnimationEvent();
 
 function neonBtnClick(){
-    window.scroll({
+    /*window.scroll({
         top: 750,
         left: 00,
         behavior: 'smooth'
     });
+    */
     $('body, html').css('overflow','visible');
     //document.querySelector(".type-writer-intro h1").classList.add("type")
 
