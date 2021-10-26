@@ -245,7 +245,10 @@ body, html {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80% {
+    0%{
+    transform: translateY(30px);
+    }
+  20%, 50%, 80% {
     transform: translateY(0);
   }
   40% {
