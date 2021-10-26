@@ -1,2 +1,2 @@
 # luke-f-website
-this is my website
+this is my personal website
