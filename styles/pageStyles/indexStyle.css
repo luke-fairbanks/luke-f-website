@@ -227,13 +227,16 @@ body, html {
 .continue-arrow-wrapper{
     text-align: center;
     margin-top: 1em;
-    color: white
+    color: #e3e3e3;
+    font-size: 1.5em;
 }
 
 .arrow {
   text-align: center;
-  margin-left: 7em;
+  margin-left: 9em;
+  font-size: 15px;
 }
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -241,14 +244,14 @@ body, html {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%, 20%, 50%, 80% {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 
