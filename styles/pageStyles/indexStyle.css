@@ -226,12 +226,13 @@ body, html {
 
 .continue-arrow-wrapper{
     text-align: center;
-
+    margin-top: 1em;
+    color: white
 }
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin-left: 7em;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
