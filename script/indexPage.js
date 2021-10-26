@@ -22,7 +22,7 @@ function whichAnimationEvent(){
   
   var animationEvent = whichAnimationEvent();
 
-function pageScroll(){
+function neonBtnClick(){
     window.scroll({
         top: 750,
         left: 00,
