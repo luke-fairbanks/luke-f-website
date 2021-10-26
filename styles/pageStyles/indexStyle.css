@@ -224,6 +224,33 @@ body, html {
     to{border-right-color: transparent;}
   }
 
+.continue-arrow-wrapper{
+    text-align: center;
+
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 .slide-2{
     padding-top: 50vh;
     padding-bottom: 40vh; 
