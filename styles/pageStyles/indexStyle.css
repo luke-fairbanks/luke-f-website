@@ -233,11 +233,12 @@ body, html {
 }
 
 .arrow {
-  text-align: center;
-  margin-left: 9em;
-  font-size: 20px;
-  text-decoration: none;
-  font: #e3e3e3;
+    text-align: center;
+    margin-left: 6em;
+    margin-top: -1em;
+    /* font-size: 20px; */
+    text-decoration: none;
+    color: #e3e3e3;
 
 }
 
@@ -248,7 +249,12 @@ body, html {
 }
 
 @keyframes bounce {
-  
+  0%{
+      transform: translateY(0px)
+  }
+  50%{
+      transform: translateY(-15px);
+  }
 }
 
 .slide-2{
