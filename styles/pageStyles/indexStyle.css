@@ -236,10 +236,10 @@ body, html {
     text-align: center;
     margin-left: 6em;
     margin-top: -1em;
-    /* font-size: 20px; */
-    text-decoration: none;
     color: #e3e3e3;
-
+}
+.arrow a {
+    text-decoration: none;
 }
 
 .bounce {
@@ -250,10 +250,13 @@ body, html {
 
 @keyframes bounce {
   0%{
-      transform: translateY(0px)
+      transform: translateY(-5px)
   }
   50%{
-      transform: translateY(-15px);
+      transform: translateY(5px);
+  }
+  100%{
+      transform: translateY(-5px);
   }
 }
 
