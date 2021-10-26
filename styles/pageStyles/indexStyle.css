@@ -254,6 +254,9 @@ body, html {
   60% {
     transform: translateY(-10px);
   }
+  100% {
+      transform: translateY(30px);
+  }
 }
 
 .slide-2{
