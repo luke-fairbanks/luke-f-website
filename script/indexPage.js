@@ -45,7 +45,8 @@ function neonBtnClick(){
     /* SCROLL WHEN FINISHED*/
     $("#typerIntro").one(animationEvent,
                 function(event) {
-                  window.location.href = "https://luke-fairbanks.netlify.app/#scroll-invitation";
+                  //show text
+                  $(".continue-arrow-wrapper").fadeIn();
     });
 }
 
