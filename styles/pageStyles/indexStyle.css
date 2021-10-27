@@ -227,23 +227,23 @@ body, html {
 .continue-arrow-wrapper{
     text-align: center;
     margin-top: 1em;
-    color: #e3e3e3;
+    color: var(--clr-neon);
     font-size: 1.5em;
     display: none;
 }
 
 .arrow {
     text-align: center;
-    margin-left: 6em;
+    margin-left: 5.75em;
     margin-top: -1em;
-    color: #e3e3e3;
+    color: var(--clr-neon);
 }
 .arrow a {
     text-decoration: none;
 }
 .fa-caret-square-down{
     text-decoration: none;
-    color: white
+    color: var(--clr-neon)
 }
 
 .bounce {
