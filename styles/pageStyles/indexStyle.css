@@ -241,6 +241,10 @@ body, html {
 .arrow a {
     text-decoration: none;
 }
+.fa-caret-square-down{
+    text-decoration: none;
+    color: white
+}
 
 .bounce {
   -moz-animation: bounce 2s infinite;
