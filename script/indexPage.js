@@ -10,7 +10,7 @@ function remove_hash_from_url() {
               document.title, clean_uri);
       }
     }
-remove_hash_from_url()
+remove_hash_from_url();
 
 const faders = document.querySelectorAll('.fade-in')
 
@@ -35,12 +35,8 @@ function whichAnimationEvent(){
   var animationEvent = whichAnimationEvent();
 
 function neonBtnClick(){
-    /*window.scroll({
-        top: 750,
-        left: 00,
-        behavior: 'smooth'
-    });
-    */
+    remove_hash_from_url();
+  
     $('body, html').css('overflow','visible');
     //document.querySelector(".type-writer-intro h1").classList.add("type")
 
