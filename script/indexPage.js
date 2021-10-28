@@ -35,7 +35,7 @@ function whichAnimationEvent(){
   var animationEvent = whichAnimationEvent();
 
 function neonBtnClick(){
-    remove_hash_from_url();
+    
   
     $('body, html').css('overflow','visible');
     //document.querySelector(".type-writer-intro h1").classList.add("type")
@@ -49,8 +49,8 @@ function neonBtnClick(){
         //$(".type-line1").css("border-right", "transparent;")
         $(".line2").addClass("type-line2");
       });
-
-    /* SCROLL WHEN FINISHED*/
+    remove_hash_from_url();
+    /* SCROLL OPTION SHOW WHEN FINISHED*/
     $("#typerIntro").one(animationEvent,
                 function(event) {
                   //show text
