@@ -136,6 +136,7 @@ $(document).ready(function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
+        remove_hash_from_url();
       });
     } // End if
   });
