@@ -49,10 +49,10 @@ function neonBtnClick(){
         //$(".type-line1").css("border-right", "transparent;")
         $(".line2").addClass("type-line2");
       });
-    remove_hash_from_url();
     /* SCROLL OPTION SHOW WHEN FINISHED*/
     $("#typerIntro").one(animationEvent,
                 function(event) {
+                  remove_hash_from_url();
                   //show text
                   $(".continue-arrow-wrapper").fadeIn();
     });
