@@ -25,3 +25,19 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+//Handle Arrow key clicks to change the slideshow
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37') {
+       plusSlides(-1)
+    }
+    else if (e.keyCode == '39') {
+       plusSlides(1)
+    }
+
+}
