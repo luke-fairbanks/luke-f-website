@@ -273,7 +273,18 @@ body, html {
 }
 
 @keyframes text-bounce {
-
+    0%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: (10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
 }
 
 .slide-2{
