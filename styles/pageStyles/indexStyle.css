@@ -274,16 +274,16 @@ body, html {
 
 @keyframes text-bounce {
     0%{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
     40%{
-        transform: (10px);
+        transform: (12px);
     }
     50%{
-        transform: translateY(10px);
+        transform: translateY(12px);
     }
     100%{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
 
